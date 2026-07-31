@@ -295,7 +295,16 @@
         <div class="contact-info">
           <div class="contact-item">
             <div class="lang-label">Email / Correo electrónico</div>
-            <p>gizellem123@gmail.com</p>
+            <p>
+              <button
+                class="contact-button contact-button--email"
+                type="button"
+                data-copy-text="gizellem123@gmail.com"
+                aria-label="Copy email address"
+              >
+                gizellem123@gmail.com
+              </button>
+            </p>
           </div>
           <div class="contact-item">
             <div class="lang-label">Phone / Teléfono</div>
@@ -331,6 +340,24 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      const emailCopyButton = document.querySelector("[data-copy-text]");
+
+      if (emailCopyButton) {
+        emailCopyButton.addEventListener("click", async () => {
+          const email = emailCopyButton.dataset.copyText;
+          try {
+            await navigator.clipboard.writeText(email);
+            const originalText = emailCopyButton.textContent;
+            emailCopyButton.textContent = "Copied!";
+            setTimeout(() => {
+              emailCopyButton.textContent = originalText;
+            }, 1500);
+          } catch (error) {
+            window.prompt("Copy email", email);
+          }
+        });
+      }
     </script>
   </body>
 </html>
