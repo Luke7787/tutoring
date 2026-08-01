@@ -81,6 +81,50 @@ a:hover {
   font-weight: 500;
 }
 
+/* Navigation link pill background + hover/focus states */
+.nav a {
+  position: relative;
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  color: inherit;
+  transition:
+    background-color 180ms ease,
+    transform 160ms ease,
+    color 180ms ease;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: rgba(184, 92, 56, 0.08); /* subtle terracotta wash */
+  transform: scale(0.98);
+  opacity: 0;
+  transition:
+    opacity 180ms ease,
+    transform 220ms ease;
+  z-index: -1;
+}
+
+.nav a:hover::before,
+.nav a:focus-visible::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  color: var(--terracotta-dark);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.nav a:active {
+  transform: translateY(0);
+}
+
 .hero {
   background:
     radial-gradient(
