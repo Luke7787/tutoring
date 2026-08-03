@@ -14,12 +14,17 @@
   --white: #ffffff;
   --shadow: 0 12px 40px rgba(44, 36, 25, 0.08);
   --radius: 16px;
+  --header-height: 5rem;
 }
 
 html {
   scroll-behavior: smooth;
   /* Ensure in-page anchor targets appear below the sticky header */
-  scroll-padding-top: 5rem;
+  scroll-padding-top: var(--header-height, 5rem);
+}
+
+section[id] {
+  scroll-margin-top: var(--header-height, 5rem);
 }
 
 body {
