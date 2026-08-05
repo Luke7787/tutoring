@@ -398,6 +398,21 @@ a:hover {
     border-color 0.2s ease;
 }
 
+/* Instagram-only size tweak: make the icon 10% larger than the other icons */
+.contact-button:not(.contact-button--email):not(
+    .contact-button--phone
+  )::before {
+  width: 1.485rem; /* 1.35rem * 1.10 */
+  height: 1.485rem;
+  /* Keep the same glyph scaling so proportions match */
+  background-size: 72% 72%;
+}
+
+/* Slightly tighten the gap between the Instagram icon and its text */
+.contact-button:not(.contact-button--email):not(.contact-button--phone) {
+  gap: 0.2rem;
+}
+
 .contact-button:hover,
 .contact-button:focus-visible {
   background: rgba(184, 92, 56, 0.12);
