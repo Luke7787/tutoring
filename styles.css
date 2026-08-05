@@ -19,11 +19,10 @@
 
 html {
   scroll-behavior: smooth;
-  /* Ensure in-page anchor targets appear below the sticky header */
-  scroll-padding-top: var(--header-height, 5rem);
 }
 
 section[id] {
+  /* Offset anchor targets under the sticky header. */
   scroll-margin-top: var(--header-height, 5rem);
 }
 

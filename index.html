@@ -351,6 +351,21 @@
     </footer>
 
     <script>
+      const rootElement = document.documentElement;
+      const siteHeader = document.querySelector(".site-header");
+
+      function updateHeaderHeight() {
+        if (!siteHeader) return;
+        rootElement.style.setProperty(
+          "--header-height",
+          `${siteHeader.offsetHeight}px`,
+        );
+      }
+
+      window.addEventListener("resize", updateHeaderHeight);
+      window.addEventListener("load", updateHeaderHeight);
+      updateHeaderHeight();
+
       document.getElementById("year").textContent = new Date().getFullYear();
 
       const emailCopyButton = document.querySelector("[data-copy-text]");
