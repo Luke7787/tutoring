@@ -36,19 +36,3 @@ tutoring/
 │   └── ...
 └── README.md
 ```
-
-## Tutoring Services
-
-The website provides information for:
-
-* **50-minute Zoom sessions:** $20
-* **In-person sessions in Santa Maria, CA:** $30
-* Online and in-person tutoring options
-* Beginner Spanish and English instruction
-* Individualized, patient, and confidence-building lessons
-
-Accepted payment methods include Zelle, Apple Pay, Venmo, and cash for in-person sessions.
-
-## Purpose
-
-This project was created as a simple, professional web presence for a private tutoring service. The goal was to provide prospective students and guardians with an easy way to learn about the tutor, available services, pricing, and tutoring policies in both English and Spanish.
