@@ -1,6 +1,6 @@
 # Tutoring Website: https://luke7787.github.io/tutoring/
 
-A responsive bilingual tutoring website for **Gizelle Mincitar-Zhuang**, offering beginner Spanish and English tutoring for students ages 12 and up. The site provides information about tutoring services, pricing, policies, and contact details in both English and Spanish.
+A responsive bilingual tutoring website offering beginner Spanish and English tutoring for students ages 12 and up. The site provides information about tutoring services, pricing, policies, and contact details in both English and Spanish.
 
 ## Features
 
@@ -12,8 +12,6 @@ A responsive bilingual tutoring website for **Gizelle Mincitar-Zhuang**, offerin
 * Pricing information for online and in-person sessions
 * Bilingual Terms & Policies section
 * Responsive layouts using CSS Grid and Flexbox
-* Custom typography using Google Fonts
-* Soft, warm visual design with cream, sand, terracotta, and dark ink tones
 
 ## Tech Stack
 * HTML5
